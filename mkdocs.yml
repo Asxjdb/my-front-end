@@ -4,7 +4,7 @@
 # mkdoc build
 # git ......
 site_name: 我的前端笔记
-site_url: https://my-font-end.github.io
+site_url: https://asxjdb.github.io/my-front-end
 theme:
   name: 'material'
   highlightjs: true
@@ -15,7 +15,7 @@ site_author: MyFontEnd
 
 # Repository
 repo_name: 'MyFontEnd/MyFontEnd.github.io'
-repo_url: 'https://github.com/my-font-end/my-font-end.github.io/'
+repo_url: 'https://github.com/asxjdb/my-front-end/'
 
 # Copyright
 copyright: "Copyright &copy; 2019 - 2024 MyFontEnd"
