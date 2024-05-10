@@ -37,7 +37,7 @@ theme:
     # - toc.follow
     # - toc.integrate
     # # - navigation.sections
-
+    - content.code.copy
     # csdiy.wiki
     - header.autohide
     - navigation.tracking
@@ -61,6 +61,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+  custom_dir: custom
 
 
   font:
@@ -82,7 +83,10 @@ theme:
     language: 'ja'
 
   disqus: 'MyFontEnd'
-
+# https://www.volcengine.com/theme/7562387-R-7-1
+# https://www.volcengine.com/theme/8582131-R-7-1
+# extra_javascript:
+#   - js/toggle_sidebar.js
 
 # Extensions
 markdown_extensions:
