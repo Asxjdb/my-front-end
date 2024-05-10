@@ -1,7 +1,7 @@
 # https://squidfunk.github.io/mkdocs-material/setup/
 # https://derrors.github.io/%E4%BB%8B%E7%BB%8D/
-# mkdoc serve
-# mkdoc build
+# mkdocs serve
+# mkdocs build
 # git ......
 site_name: 我的前端笔记
 site_url: https://asxjdb.github.io/my-front-end
@@ -14,47 +14,58 @@ site_author: MyFontEnd
 
 
 # Repository
-repo_name: 'MyFontEnd/MyFontEnd.github.io'
+repo_name: 'Asxjdb/my-front-end'
 repo_url: 'https://github.com/asxjdb/my-front-end/'
 
 # Copyright
-copyright: "Copyright &copy; 2019 - 2024 MyFontEnd"
+copyright: "Copyright &copy; 2024 - present Asxjdb"
 
 
 theme:
   name: material
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      primary: 'white'
-      accent: 'white'
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+  language: zh
+  static_templates:
+    - 404.html
+  include_search_page: false
+  search_index_only: true
+  features:
+    # # tabs: true
+    # - navigation.tabs
+    # # - navigation.tabs.sticky
+    # - navigation.path
+    # - navigation.top
+    # - toc.follow
+    # - toc.integrate
+    # # - navigation.sections
 
-    # Palette toggle for dark mode
+    # csdiy.wiki
+    - header.autohide
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: 'black'
-      accent: 'black'
+      primary: cyan
+      accent: deep purple
       toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+        icon: material/weather-night
+        name: Switch to light mode
 
-  features:
-    # tabs: true
-    - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.path
-    - navigation.top
-    - toc.follow
-    - toc.integrate
-    # - navigation.sections
 
-  #font:
-    #text: 'Ubuntu'
-    #code: 'Ubuntu Mono'
+  font:
+    text: Roboto Slab
+    code: Roboto Mono
 
   # favicon: 'assets/images/favicon.ico'
 
