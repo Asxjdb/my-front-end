@@ -1,0 +1,1913 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="MyFontEnd">
+      
+      
+        <link rel="canonical" href="https://asxjdb.github.io/my-front-end/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E7%AC%AC44%E6%9C%9F%E7%BA%BF%E4%B8%8A%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E8%B5%9B/">
+      
+      
+        <link rel="prev" href="../24%E6%A8%A1%E6%8B%9F%E8%B5%9B3/">
+      
+      
+        <link rel="next" href="../%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BA%93/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>第44期线上编程实战赛 - 我的前端笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Slab";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="我的前端笔记" class="md-header__button md-logo" aria-label="我的前端笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            我的前端笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第44期线上编程实战赛
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/asxjdb/my-front-end/" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Asxjdb/my-front-end
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="我的前端笔记" class="md-nav__button md-logo" aria-label="我的前端笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    我的前端笔记
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/asxjdb/my-front-end/" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Asxjdb/my-front-end
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JavaScript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Vue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%B0%8F%E6%BB%A1VUE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    小满VUE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9D%82%E9%A1%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    杂项
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    蓝桥杯
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            蓝桥杯
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22%E7%9C%81%E8%B5%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22省赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23%E7%9C%81%E8%B5%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23省赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24%E7%9C%81%E8%B5%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24省赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22%E5%9B%BD%E8%B5%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22国赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23%E5%9B%BD%E8%B5%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23国赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22%E6%A8%A1%E6%8B%9F%E8%B5%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22模拟赛1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23%E6%A8%A1%E6%8B%9F%E8%B5%9B1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23模拟赛1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23%E6%A8%A1%E6%8B%9F%E8%B5%9B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23模拟赛2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23%E6%A8%A1%E6%8B%9F%E8%B5%9B3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23模拟赛3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24%E6%A8%A1%E6%8B%9F%E8%B5%9B1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24模拟赛1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24%E6%A8%A1%E6%8B%9F%E8%B5%9B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24模拟赛2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24%E6%A8%A1%E6%8B%9F%E8%B5%9B3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24模拟赛3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第44期线上编程实战赛
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第44期线上编程实战赛
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 竞赛管理系统
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 汽车私人定制
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 花与大海
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 网站换皮肤
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 进制转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 学生数据请求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 Markdown编辑器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 中国十大名花
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 熟能生巧 -- 记忆函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 找回密码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 找回密码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      index.html
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accountvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      account.vue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stepsvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      steps.vue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      check.vue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifyvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify.vue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BA%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前端面试题库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 竞赛管理系统
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 汽车私人定制
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 花与大海
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 网站换皮肤
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 进制转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 学生数据请求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 Markdown编辑器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 中国十大名花
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 熟能生巧 -- 记忆函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 找回密码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 找回密码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      index.html
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accountvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      account.vue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stepsvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      steps.vue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      check.vue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifyvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify.vue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>第44期线上编程实战赛</h1>
+
+<h3 id="1">1 竞赛管理系统<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">newObj</span><span class="w"> </span><span class="o">=</span><span class="p">{}</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="nx">newObj</span><span class="p">,</span><span class="nx">obj</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="2">2 汽车私人定制<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">element</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;fieldset[data-uic~=&quot;color-compare&quot;]&#39;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#left&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#right&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#range&quot;</span><span class="p">);</span>
+
+<span class="c1">// 修改该元素的CSS变量</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">change</span><span class="o">=</span><span class="p">()=&gt;{</span>
+<span class="w">    </span><span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setProperty</span><span class="p">(</span><span class="s2">&quot;--_c1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">left</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setProperty</span><span class="p">(</span><span class="s2">&quot;--_c2&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">right</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setProperty</span><span class="p">(</span><span class="s2">&quot;--_x&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">range</span><span class="p">.</span><span class="nx">value</span><span class="o">+</span><span class="s1">&#39;%&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">change</span><span class="p">()</span>
+<span class="nx">left</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">change</span><span class="p">)</span>
+<span class="nx">right</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">change</span><span class="p">)</span>
+<span class="nx">range</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">change</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>
+<p>设置CSS变量：<code>element.style.setProperty('--ca', 'value')</code></p>
+</li>
+<li>
+<p>获取CSS变量：<code>element.style.setProperty('--ca')</code></p>
+</li>
+<li>
+<p><code>:where()</code>选择器</p>
+</li>
+<li>
+<p>渐变背景</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">background-image</span><span class="o">:</span><span class="w"> </span><span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">to</span><span class="w"> </span><span class="nt">right</span><span class="o">,</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--_c1</span><span class="o">)</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--_x</span><span class="o">),</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--_c2</span><span class="o">)</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--_x</span><span class="o">));</span>
+</code></pre></div>
+<h3 id="3">3 花与大海<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">App根组件开始</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;app&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;box&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">TODO开始</span><span class="o">:</span><span class="w"> </span><span class="nx">修改代码</span><span class="err">，</span><span class="nx">实现点击按钮切换组件</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="o">:</span><span class="nx">is</span><span class="o">=</span><span class="s2">&quot;comp&quot;</span><span class="o">&gt;&lt;</span><span class="err">/Component&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;btns&quot;</span><span class="o">&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;btn1&quot;</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;btn&quot;</span><span class="w"> </span><span class="err">@</span><span class="nx">click</span><span class="o">=</span><span class="s2">&quot;change(0)&quot;</span><span class="o">&gt;</span><span class="nx">花</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;btn2&quot;</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;btn&quot;</span><span class="w"> </span><span class="err">@</span><span class="nx">click</span><span class="o">=</span><span class="s2">&quot;change(1)&quot;</span><span class="o">&gt;</span><span class="nx">大海</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">            </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">TODO结束</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">App根组件结束</span><span class="w"> </span><span class="o">--&gt;</span>
+
+<span class="w">    </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Flower组件开始</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">template</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">img</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;./images/flower.jpg&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/template&gt;</span>
+<span class="w">    </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Flower组件结束</span><span class="w"> </span><span class="o">--&gt;</span>
+
+<span class="w">    </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Ocean组件开始</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">template</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;Ocean&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;Ocean&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">img</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;./images/ocean.jpg&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/template&gt;</span>
+<span class="w">    </span><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Ocean组件结束</span><span class="w"> </span><span class="o">--&gt;</span>
+<span class="o">&lt;</span><span class="err">/body&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;module&quot;</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">createApp</span><span class="p">,</span><span class="w"> </span><span class="nx">ref</span><span class="p">,</span><span class="w"> </span><span class="nx">reactive</span><span class="p">,</span><span class="w"> </span><span class="nx">toRefs</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<span class="w">        </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// TODO开始: 添加代码，实现动态组件切换效果</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="nx">comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ref</span><span class="p">(</span><span class="s1">&#39;Flower&#39;</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">change</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">val</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">val</span><span class="p">)</span><span class="w"> </span><span class="nx">comp</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Ocean&#39;</span>
+<span class="w">                </span><span class="k">else</span><span class="w"> </span><span class="nx">comp</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Flower&#39;</span>
+<span class="w">                </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">change</span><span class="p">,</span><span class="w"> </span><span class="nx">comp</span><span class="w"> </span><span class="p">}</span>
+<span class="w">            </span><span class="c1">// TODO结束</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">    </span><span class="c1">// Flower组件</span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#Flower&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">})</span>
+
+<span class="w">    </span><span class="c1">// Ocean组件</span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s2">&quot;Ocean&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#Ocean&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
+
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/html&gt;</span>
+</code></pre></div>
+<ul>
+<li>
+<p>动态组件<code>&lt;Component :is="comp"&gt;&lt;/Component&gt;</code></p>
+</li>
+<li>
+<p><code>is</code>后面跟一个字符串就行，这个字符串是组件的名字</p>
+</li>
+<li>
+<p>注册组件</p>
+</li>
+<li>
+<p><code>html
+        &lt;template id="Flower"&gt;
+            &lt;div class="Flower"&gt;
+                &lt;img src="./images/flower.jpg"&gt;
+            &lt;/div&gt;
+        &lt;/template&gt;</code></p>
+</li>
+<li>
+<p><code>js
+        app.component("Flower", {
+            template: "#Flower",
+        })</code></p>
+</li>
+</ul>
+<h3 id="4">4 网站换皮肤<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#body&#39;</span><span class="p">)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">chooseimg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.chooseimg&#39;</span><span class="p">)</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">)){</span>
+<span class="w">    </span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`url(</span><span class="si">${</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">)</span><span class="si">}</span><span class="sb">)`</span>
+<span class="w">    </span><span class="nx">box</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;active&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">box</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">chooseimg</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">tagName</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s1">&#39;IMG&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">src</span>
+<span class="w">    </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">src</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`url(</span><span class="si">${</span><span class="nx">src</span><span class="si">}</span><span class="sb">)`</span>
+<span class="w">    </span><span class="nx">box</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;active&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">box</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">clearSkin</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+<span class="w">    </span><span class="nx">box</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;active&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">box</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div>
+<h3 id="5">5 进制转换<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nx">HEX</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">request</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">binary</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mf">16</span><span class="p">)</span>
+<span class="p">},</span>
+<span class="nx">DEC</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">request</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">binary</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mf">10</span><span class="p">)</span>
+<span class="p">},</span>
+<span class="nx">OCT</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">request</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">binary</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mf">8</span><span class="p">)</span>
+<span class="p">},</span>
+<span class="nx">BIN</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">request</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">binary</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><code>parsetInt(string, radix)</code>，把string按照<code>radix</code>进制解析为数字</li>
+<li><code>Number.prototype.toString(radix)</code> 把数字转换为<code>radix</code>进制的字符串</li>
+</ul>
+<h3 id="6">6 学生数据请求<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;/student&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;GET&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;./js/data.js&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="w">        </span><span class="nx">send</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">file</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;/student/add&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;POST&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">req</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;readable&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="nx">chunk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">null</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="p">(</span><span class="nx">chunk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">read</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">body</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">chunk</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">});</span>
+<span class="w">        </span><span class="nx">req</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">body</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">send</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">body</span><span class="p">)</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">});</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 在这里需要获取学生数据并展示到页面中</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">res</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// TODO 请求服务器拿到数据，并完成界面渲染，请求学生数据时需要调用上面提供的方法解析响应体中的data数据，调用渲染方法，注意render函数需要传入数组</span>
+<span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;/student&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">r</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">r</span><span class="p">.</span><span class="nx">json</span><span class="p">()).</span><span class="nx">then</span><span class="p">(</span><span class="nx">r</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">r</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">parseRes</span><span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span>
+<span class="w">        </span><span class="nx">render</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span>
+<span class="w">        </span><span class="nx">submitBtn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleAddStudent</span><span class="p">)</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="p">}</span>
+
+<span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleAddStudent</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">// TODO 你需要将表单中所有的文本框的值获取到，然后向服务器请求，拿到服务器数据调用渲染方法，注意render函数需要传入数组</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">data</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;/student/add&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span>
+<span class="w">            </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="nx">nameDom</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="nx">ageDom</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">phone</span><span class="o">:</span><span class="w"> </span><span class="nx">phoneDom</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>
+<span class="w">        </span><span class="p">})</span>
+<span class="w">    </span><span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">()).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">res</span><span class="o">=</span><span class="nx">parseRes</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">render</span><span class="p">([</span><span class="nx">res</span><span class="p">])</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="7-markdown">7 Markdown编辑器<a class="headerlink" href="#7-markdown" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">parseMarkdownToHTML</span><span class="p">(</span><span class="nx">markdown</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// TODO: 请完成这个函数</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">markdown</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;\n&#39;</span><span class="p">)</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^#{1,6} (.+)/</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^!\[([^\]]+)\]\(([^\)]+)\)/</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">enter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/\n/</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">li</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^- (.+)/</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">isTable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^\|/</span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">index</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">index</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">list</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">title</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">line</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="nx">level</span><span class="o">=</span><span class="nx">line</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="mf">0</span><span class="p">].</span><span class="nx">length</span>
+<span class="w">            </span><span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">line</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="sb">`&lt;h</span><span class="si">${</span><span class="nx">level</span><span class="si">}</span><span class="sb">&gt;$1&lt;/h</span><span class="si">${</span><span class="nx">level</span><span class="si">}</span><span class="sb">&gt;`</span><span class="p">))</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">img</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">line</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">line</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">img</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&lt;img src=&quot;$2&quot; alt=&quot;$1&quot;&gt;&#39;</span><span class="p">))</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">line</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;&lt;br&gt;&#39;</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">li</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">line</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="nx">html</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&lt;ul&gt;&#39;</span>
+<span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">li</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">line</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">html</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">line</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">li</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&lt;li&gt;$1&lt;/li&gt;&#39;</span><span class="p">)</span>
+<span class="w">                </span><span class="nx">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">list</span><span class="p">[</span><span class="o">++</span><span class="nx">index</span><span class="p">]</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="nx">index</span><span class="o">--</span>
+<span class="w">            </span><span class="nx">html</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;&lt;/ul&gt;&#39;</span>
+<span class="w">            </span><span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">html</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">isTable</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">line</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="nx">html</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&lt;table&gt;&lt;tbody&gt;&#39;</span>
+<span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">isTable</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">line</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// debugger</span>
+<span class="w">                </span><span class="kd">let</span><span class="w"> </span><span class="nx">tr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">line</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">).</span><span class="nx">slice</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nx">e</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`&lt;td&gt;</span><span class="si">${</span><span class="nx">e</span><span class="p">.</span><span class="nx">trim</span><span class="p">()</span><span class="si">}</span><span class="sb">&lt;/td&gt;`</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="w">                </span><span class="nx">tr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`&lt;tr&gt;</span><span class="si">${</span><span class="nx">tr</span><span class="si">}</span><span class="sb">&lt;/tr&gt;`</span>
+<span class="w">                </span><span class="nx">html</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">tr</span>
+<span class="w">                </span><span class="nx">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">list</span><span class="p">[</span><span class="o">++</span><span class="nx">index</span><span class="p">]</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="nx">index</span><span class="o">--</span>
+<span class="w">            </span><span class="nx">html</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;&lt;/tbody&gt;&lt;/table&gt;&#39;</span>
+<span class="w">            </span><span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">html</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">line</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&lt;br&gt;&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>换行到底怎么解析？<code>str.replace('\n', '&lt;br&gt;')</code></li>
+</ul>
+<h3 id="8">8 中国十大名花<a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
+<p><code>index.htm</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">useFlower</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useFlowerStore</span><span class="p">();</span>
+<span class="nx">onMounted</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">axios</span><span class="p">(</span><span class="s2">&quot;./js/flowers.json&quot;</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">useFlower</span><span class="p">.</span><span class="nx">flowers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">item</span><span class="o">=</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;item&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">item</span><span class="p">){</span>
+<span class="w">        </span><span class="nx">useFlower</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">item</span><span class="p">))</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>store.js</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">useFlowerStore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">defineStore</span><span class="p">(</span><span class="s2">&quot;useFlowerStore&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">state</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">    </span><span class="nx">flowers</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="c1">// 所有花卉信息</span>
+<span class="w">    </span><span class="nx">selectedFlower</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="c1">// 当前选中的花</span>
+<span class="w">  </span><span class="p">}),</span>
+<span class="w">  </span><span class="c1">// TODO:补全代码实现目标效果</span>
+<span class="w">  </span><span class="nx">getters</span><span class="o">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">  </span><span class="nx">actions</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">select</span><span class="p">(</span><span class="nx">item</span><span class="p">){</span>
+<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">selectedFlower</span><span class="o">=</span><span class="nx">item</span>
+<span class="w">      </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;item&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">item</span><span class="p">))</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">clear</span><span class="p">(){</span>
+<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">selectedFlower</span><span class="o">=</span><span class="kc">null</span>
+<span class="w">      </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="c1">// TODOEnd</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>FlowerDetails.js</code></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// TODO:补全代码实现目标效果</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">FlowerDetails</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;div class=&quot;flower&quot; v-if=&#39;flowerStore.selectedFlower&#39;&gt;</span>
+<span class="sb">        &lt;h2 class=&quot;flower-name&quot;&gt;{{flowerStore.selectedFlower.name}}&lt;/h2&gt;</span>
+<span class="sb">        &lt;img :src=&quot;flowerStore.selectedFlower.image&quot;&gt;</span>
+<span class="sb">        &lt;p class=&quot;flower-description&quot;&gt;花语：{{flowerStore.selectedFlower.language}}&lt;/p&gt;</span>
+<span class="sb">        &lt;button type=&quot;info&quot; @click=&#39;flowerStore.clear&#39;&gt;返回&lt;/button&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  `</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">flowerStore</span><span class="o">=</span><span class="nx">useFlowerStore</span><span class="p">()</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="nx">flowerStore</span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="p">};</span>
+<span class="c1">// TODOEnd</span>
+</code></pre></div>
+<p><code>FlowerList.js</code></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// TODO:补全代码实现目标效果</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">FlowerList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">  &lt;div class=&quot;flower-list&quot; v-if=&#39;flowerStore.flowers.length &amp;&amp; !flowerStore.selectedFlower&#39;&gt;</span>
+<span class="sb">    &lt;div class=&quot;flower-card&quot; v-for=&#39;item in flowerStore.flowers&#39; :key=&#39;item.id&#39;&gt;</span>
+<span class="sb">      &lt;h2 class=&quot;name&quot;&gt;{{item.name}}&lt;/h2&gt;</span>
+<span class="sb">      &lt;p class=&quot;scientific-name&quot;&gt;{{item.scientificName}}&lt;/p&gt;</span>
+<span class="sb">      &lt;div class=&quot;description&quot;&gt;{{item.description}}&lt;/div&gt;</span>
+<span class="sb">      &lt;button type=&quot;primary&quot; @click=flowerStore.select(item)&gt;查看详情&lt;/button&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  &lt;/div&gt;</span>
+<span class="sb">  `</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">flowerStore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useFlowerStore</span><span class="p">()</span>
+<span class="w">        </span><span class="c1">// const select=(item)=&gt;{}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">flowerStore</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">};</span>
+<span class="c1">// TODOEnd</span>
+</code></pre></div>
+<ul>
+<li><code>.value</code> 通常用于处理 <code>ref</code> 对象。Pinia 的 <code>state</code> 属性默认不是 <code>ref</code>，而是使用 <code>reactive</code> 创建的响应式对象。所以你可以直接赋值，而不需要 <code>.value</code>。</li>
+</ul>
+<h3 id="9-">9 熟能生巧 -- 记忆函数<a class="headerlink" href="#9-" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">memorize</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="p">()</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(...</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">str_arg</span><span class="o">=</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">map</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">str_arg</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">map</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">str_arg</span><span class="p">)</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="nx">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fn</span><span class="p">(...</span><span class="nx">arg</span><span class="p">)</span>
+<span class="w">            </span><span class="nx">map</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">str_arg</span><span class="p">,</span><span class="w"> </span><span class="nx">ans</span><span class="p">)</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">ans</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>如何记忆数组？<code>JSON.stringify(arr)</code></li>
+</ul>
+<h3 id="10">10 找回密码<a class="headerlink" href="#10" title="Permanent link">&para;</a></h3>
+<h4 id="indexhtml"><code>index.html</code><a class="headerlink" href="#indexhtml" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">changeStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">val</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">val</span><span class="w"> </span><span class="o">!==</span><span class="s1">&#39;string&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span>
+<span class="w">    </span><span class="nx">data</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">val</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="accountvue"><code>account.vue</code><a class="headerlink" href="#accountvue" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>&lt;template&gt;
+  &lt;div class=&quot;account container&quot;&gt;
+    &lt;section class=&quot;content bgcolor-6&quot;&gt;
+      &lt;span class=&quot;input input--juro&quot;&gt;
+        &lt;input
+          :ref=&quot;input&quot;
+          class=&quot;input__field input__field--juro&quot;
+          type=&quot;text&quot;
+          id=&quot;userName&quot;
+        /&gt;
+        &lt;label class=&quot;input__label input__label--juro&quot; for=&quot;input-28&quot;&gt;
+          &lt;span
+            id=&quot;userNameVerify&quot;
+            class=&quot;input__label-content input__label-content--juro&quot;
+            &gt;用户名&lt;/span
+          &gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;input input--juro&quot;&gt;
+        &lt;input
+          :ref=&quot;input&quot;
+          class=&quot;input__field input__field--juro&quot;
+          type=&quot;text&quot;
+          id=&quot;idNum&quot;
+        /&gt;
+        &lt;label class=&quot;input__label input__label--juro&quot; for=&quot;input-29&quot;&gt;
+          &lt;span
+            id=&quot;idNumVerify&quot;
+            class=&quot;input__label-content input__label-content--juro&quot;
+            &gt;身份证号&lt;/span
+          &gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/section&gt;
+    &lt;el-button type=&quot;primary&quot; id=&quot;nextStep&quot; @click=&quot;next&quot;&gt;下一步&lt;/el-button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+const { ref, onMounted, defineEmits } = Vue;
+module.exports = {
+  name: &quot;account&quot;,
+  setup(props,{emit}) {
+    const next = () =&gt; {
+      let flag=true;
+      if (/^[\d\w\_]{3,5}$/.test(inputs.value[0].value)) {
+        document.querySelector(&quot;#userNameVerify&quot;).classList.add(&quot;right&quot;);
+        document.querySelector(&quot;#userNameVerify&quot;).classList.remove(&quot;wrong&quot;);
+        document.querySelector(&quot;#userNameVerify&quot;).innerText = &quot;用户名&quot;;
+      } else {
+        document.querySelector(&quot;#userNameVerify&quot;).classList.remove(&quot;right&quot;);
+        document.querySelector(&quot;#userNameVerify&quot;).classList.add(&quot;wrong&quot;);
+        document.querySelector(&quot;#userNameVerify&quot;).innerText = &quot;用户名不合法&quot;;
+        // context 是 setup 函数的第二个参数。它包含了一些组件相关的上下文信息，包括 attrs、slots 和 emit。
+        emit(&quot;change&quot;, &quot;error&quot;);
+        flag=false
+      }
+
+      let shenfen = inputs.value[1].value;
+      let region = shenfen.slice(0, 6);
+      if (
+        shenfen.length !== 18 ||
+        !/^[1-9][\d]{5}$/.test(region) ||
+        !/^(19|20|21)[\d]{2}$/.test(shenfen.slice(6, 10)) ||
+        !/^\d{7}$/.test(shenfen.slice(10, 17)) ||
+        !/^[\dX]$/
+      ) {
+        document.querySelector(&quot;#idNumVerify&quot;).classList.remove(&quot;right&quot;);
+        document.querySelector(&quot;#idNumVerify&quot;).classList.add(&quot;wrong&quot;);
+        document.querySelector(&quot;#idNumVerify&quot;).innerText = &quot;身份证号不合法&quot;;
+        emit(&quot;change&quot;, &quot;error&quot;);
+        flag=false
+      } else {
+        document.querySelector(&quot;#idNumVerify&quot;).classList.add(&quot;right&quot;);
+        document.querySelector(&quot;#idNumVerify&quot;).classList.remove(&quot;wrong&quot;);
+        document.querySelector(&quot;#idNumVerify&quot;).innerText = &quot;身份证号&quot;;
+      }
+      if(flag){
+        emit(&quot;change&quot;, &quot;success&quot;);
+        emit(&quot;show&quot;, &quot;check&quot;);
+        emit(&quot;next&quot;, 1);
+        emit(&quot;change&quot;, &quot;process&quot;);
+      }
+    };
+
+    // ***此部分代码不用修改***
+    //#region
+    // ref 被设置为一个函数 input，这意味着 Vue 会在组件渲染时调用这个函数
+    // 并将相应的 DOM 元素作为参数传递给它。
+    const inputs = ref([]);
+    const input = (el) =&gt; {
+      inputs.value.push(el);
+    };
+    onMounted(() =&gt; {
+      inputs.value.map((el) =&gt; {
+        if (el.value.trim() != &quot;&quot;) {
+          el.parentNode.classList.add(&quot;input--filled&quot;);
+        }
+        el.onfocus = function () {
+          el.parentNode.classList.add(&quot;input--filled&quot;);
+        };
+        el.onblur = function () {
+          if (this.value.trim() != &quot;&quot;) {
+            el.parentNode.classList.add(&quot;input--filled&quot;);
+          } else {
+            el.parentNode.classList.remove(&quot;input--filled&quot;);
+          }
+        };
+      });
+    });
+    //#endregion
+    // **********************
+    return {
+      input,
+      next,
+    };
+  },
+};
+&lt;/script&gt;
+
+&lt;style scoped&gt;&lt;/style&gt;
+</code></pre></div>
+<h4 id="stepsvue"><code>steps.vue</code><a class="headerlink" href="#stepsvue" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>&lt;template&gt;
+  &lt;div class=&quot;steps&quot;&gt;
+    &lt;el-steps
+      align-center
+      :active=&quot;props.active&quot;
+      :process-status=&quot;props.status&quot;
+      finish-status=&quot;success&quot;
+    &gt;
+      &lt;el-step title=&quot;账号核实&quot; description=&quot;输入用户名和身份证号&quot;&gt;&lt;/el-step&gt;
+      &lt;el-step title=&quot;验证身份&quot; description=&quot;请确认您是真人&quot;&gt;&lt;/el-step&gt;
+      &lt;el-step title=&quot;修改密码&quot; description=&quot;输入要修改的密码&quot;&gt;&lt;/el-step&gt;
+      &lt;el-step title=&quot;成功&quot; description=&quot;成功找回密码&quot;&gt;&lt;/el-step&gt;
+    &lt;/el-steps&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+module.exports = {
+  // TODO:补全代码实现目标效果
+  name:&#39;steps&#39;,
+  props:[&#39;active&#39;, &#39;status&#39;],
+  setup(props, { emit }) {
+    return { props };
+  },
+};
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+&lt;/style&gt;
+</code></pre></div>
+<h4 id="checkvue"><code>check.vue</code><a class="headerlink" href="#checkvue" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>&lt;template&gt;
+  &lt;div class=&quot;check&quot; v-loading=&quot;loading&quot; element-loading-text=&quot;验证中...&quot;&gt;
+    &lt;div class=&quot;robot&quot; @click=&quot;inputCheck&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      &lt;span&gt;确认您是真人&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+const { ref} = Vue;
+module.exports = {
+  name: &quot;check&quot;,
+  setup(props, { emit }) {
+    // TODO:补全代码实现目标效果
+    const loading = ref(false);
+    console.log();
+    const inputCheck = () =&gt; {
+      loading.value = true;
+      setTimeout(() =&gt; {
+        loading.value = false;
+        emit(&quot;change&quot;, &quot;success&quot;);
+        emit(&quot;show&quot;, &quot;modify&quot;);
+        emit(&quot;next&quot;, 2);
+        emit(&quot;change&quot;, &quot;process&quot;);
+      }, 1500);
+    };
+
+    return {
+      inputCheck,
+      loading,
+    };
+  },
+};
+&lt;/script&gt;
+&lt;style scoped&gt;&lt;/style&gt;
+</code></pre></div>
+<h4 id="modifyvue"><code>modify.vue</code><a class="headerlink" href="#modifyvue" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>&lt;template&gt;
+  &lt;div class=&quot;modify container&quot;&gt;
+    &lt;section class=&quot;content bgcolor-6&quot;&gt;
+      &lt;span class=&quot;input input--juro&quot;&gt;
+        &lt;input
+          :ref=&quot;input&quot;
+          class=&quot;input__field input__field--juro&quot;
+          type=&quot;text&quot;
+          id=&quot;passwordOne&quot;
+        /&gt;
+        &lt;label class=&quot;input__label input__label--juro&quot; for=&quot;input-28&quot;&gt;
+          &lt;span
+            id=&quot;passwordOneVerify&quot;
+            class=&quot;input__label-content input__label-content--juro&quot;
+            :class=&quot;{
+              wrong: rightPasswd === 2,
+              right: rightPasswd === 1,
+            }&quot;
+            &gt;{{ rightPasswd === 2 ? &quot;您输入的密码不合法&quot; : &quot;请输入密码&quot; }}&lt;/span
+          &gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;input input--juro&quot;&gt;
+        &lt;input
+          :ref=&quot;input&quot;
+          class=&quot;input__field input__field--juro&quot;
+          type=&quot;text&quot;
+          id=&quot;passwordTwo&quot;
+        /&gt;
+        &lt;label class=&quot;input__label input__label--juro&quot; for=&quot;input-29&quot;&gt;
+          &lt;span
+            id=&quot;passwordTwoVerify&quot;
+            class=&quot;input__label-content input__label-content--juro&quot;
+            :class=&quot;{ wrong: twoEqual === 2, right: twoEqual === 1 }&quot;
+            &gt;{{
+              twoEqual === 2 ? &quot;两次输入的密码不一致&quot; : &quot;请再次输入密码&quot;
+            }}&lt;/span
+          &gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/section&gt;
+    &lt;el-button type=&quot;primary&quot; id=&quot;alter&quot; @click=&quot;checkModify&quot;&gt;修改&lt;/el-button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+const { ref, onMounted } = Vue;
+module.exports = {
+  name: &quot;modify&quot;,
+  setup(props, { emit }) {
+    // TODO:补全代码实现目标效果
+    console.log(emit);
+    const checkPasswd = (password) =&gt; {
+      // debugger
+      if (password.length &lt; 6 || password.length &gt; 12) return false;
+      if (!/[A-Z]/.test(password) || !/[a-z]/.test(password)) return false;
+      if (!/\d/.test(password)|| !/[_@$!%*?&amp;]/.test(password)) return false;
+      return true;
+    };
+
+    // ***此部分代码不用修改***
+    //#region
+    const inputs = ref([]);
+    const input = (el) =&gt; {
+      inputs.value.push(el);
+    };
+    onMounted(() =&gt; {
+      inputs.value.map((el) =&gt; {
+        if (el.value.trim() != &quot;&quot;) {
+          el.parentNode.classList.add(&quot;input--filled&quot;);
+        }
+        el.onfocus = function () {
+          el.parentNode.classList.add(&quot;input--filled&quot;);
+        };
+        el.onblur = function () {
+          if (this.value.trim() != &quot;&quot;) {
+            el.parentNode.classList.add(&quot;input--filled&quot;);
+          } else {
+            el.parentNode.classList.remove(&quot;input--filled&quot;);
+          }
+        };
+      });
+    });
+    //#endregion
+    // **********************
+    const rightPasswd = ref(0);
+    const twoEqual = ref(0);
+    const checkModify = () =&gt; {
+      if (checkPasswd(inputs.value[0].value)) {
+        rightPasswd.value = 1;
+      } else {
+        rightPasswd.value = 2;
+        emit(&quot;change&quot;, &quot;error&quot;);
+      }
+
+      if (inputs.value[0].value == inputs.value[1].value) {
+        twoEqual.value = 1;
+        if (rightPasswd.value === 1) {
+          console.log(emit);
+          emit(&quot;change&quot;, &quot;success&quot;);
+          emit(&quot;show&quot;, &quot;success&quot;);
+          emit(&quot;next&quot;, &quot;3&quot;);
+          emit(&quot;change&quot;, &quot;success&quot;);
+        }
+      } else {
+        twoEqual.value = 2;
+      }
+    };
+    return {
+      input,
+      rightPasswd,
+      twoEqual,
+      checkModify,
+    };
+  },
+};
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+&lt;/style&gt;
+</code></pre></div>
+<ul>
+<li>
+<p>在 Vue 3 中，<code>setup</code> 函数可以接收两个参数：</p>
+</li>
+<li>
+<p><strong><code>props</code></strong>：这是一个对象，包含传递给组件的属性。<code>props</code> 是响应式的，可以在 <code>setup</code> 函数中直接使用。</p>
+</li>
+<li><strong><code>context</code></strong>：这是一个对象，包含了组件的上下文信息。它有以下三个属性：<ul>
+<li><strong><code>attrs</code></strong>：包含传递给组件但未被声明为 <code>props</code> 的属性。这些属性通常会被应用到组件的根元素上。</li>
+<li><strong><code>slots</code></strong>：包含传递给组件的插槽内容。</li>
+<li><strong><code>emit</code></strong>：用于触发自定义事件的方法。</li>
+</ul>
+</li>
+</ul>
+<p>因此，<code>setup</code> 函数的完整签名如下：</p>
+<div class="highlight"><pre><span></span><code>&lt;script&gt;
+module.exports = {
+  // TODO:补全代码实现目标效果
+  name:&#39;steps&#39;,
+  props:[&#39;active&#39;, &#39;status&#39;],
+  setup(props, { emit }) {
+    return { props };
+  },
+};
+&lt;/script&gt;
+</code></pre></div>
+<ul>
+<li>
+<p>要使用<code>props</code>，必须声明<code>props:['active', 'status']</code>，不然不会触发响应式</p>
+</li>
+<li>
+<p>如果属性名包含特殊字符、空格、连字符（-）等，或者以数字开头，就需要加引号</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">span</span>
+    <span class="na">id</span><span class="o">=</span><span class="s">&quot;passwordOneVerify&quot;</span>
+    <span class="na">:class</span><span class="o">=</span><span class="s">&quot;{</span>
+<span class="s">      &#39;input__label-content&#39;: true,</span>
+<span class="s">      &#39;input__label-content--juro&#39;: true,</span>
+<span class="s">      wrong: rightPasswd === 2,</span>
+<span class="s">      right: rightPasswd === 1,</span>
+<span class="s">    }&quot;</span>
+<span class="p">&gt;</span>请输入密码<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 - present Asxjdb
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "header.autohide", "navigation.tracking", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
